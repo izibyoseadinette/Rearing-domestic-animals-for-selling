@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZIBYOSE Adinette | Domestic Animal Rearing & Export</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --brand-yellow: #FFD700;
+            --brand-orange: #FF8C00;
+            --brand-red: #D32F2F;
+        }
+
+        body {
+            font-family: 'Plus+Jakarta+Sans', sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-brand-gradient {
+            background: linear-gradient(135deg, var(--brand-yellow), var(--brand-orange));
+        }
+
+        .animal-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--brand-orange);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-shadow {
+            box-shadow: 0 4px 14px 0 rgba(255, 140, 0, 0.39);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-brand-gradient rounded-xl flex items-center justify-center text-white font-bold text-xl">I</div>
+                <span class="font-bold text-xl tracking-tight uppercase">IZIBYOSE <span class="text-orange-500">Adinette</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#purpose" class="nav-link">Social Mission</a>
+                <a href="#livestock" class="nav-link">Livestock</a>
+                <a href="#vision" class="nav-link">Vision</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="bg-black text-white px-6 py-2.5 rounded-full font-semibold hover:bg-orange-600 transition-colors btn-shadow">
+                Inquire Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gray-50 overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block py-1 px-4 rounded-full bg-orange-100 text-orange-700 font-bold text-sm mb-6 uppercase tracking-widest">
+                        Based in Rubavu, Rwanda
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                        Excellence in <br/>
+                        <span class="gradient-text">Domestic Animal</span> Rearing.
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-lg">
+                        We provide high-quality livestock for global export while empowering local youth through sustainable community-based farming initiatives.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#livestock" class="bg-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-orange-600 transition-all btn-shadow">
+                            Explore Livestock
+                        </a>
+                        <a href="#purpose" class="border-2 border-black px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-black hover:text-white transition-all">
+                            Our Impact
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1545468241-1ef70355389a?q=80&w=1000&auto=format&fit=crop" alt="Rwanda Farm" class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs border-l-4 border-yellow-500">
+                        <p class="text-sm font-semibold text-gray-500 italic">"Empowering the next generation of farmers."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Purpose Section -->
+    <section id="purpose" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-black">Reducing Youth Unemployment</h2>
+                <div class="w-20 h-1.5 bg-brand-orange mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600 text-lg">Our core mission is social transformation. We don't just rear animals; we build livelihoods for the youth in Rubavu.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100 flex items-start space-x-6">
+                    <div class="bg-black text-white w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 text-2xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">20+ Local Posters</h3>
+                        <p class="text-gray-600 leading-relaxed">We hire local youth as "Posters" to care for our animals, providing them with stable employment and technical agricultural skills.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100 flex items-start space-x-6">
+                    <div class="bg-orange-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 text-2xl">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">Incentive-Based Growth</h3>
+                        <p class="text-gray-600 leading-relaxed">For every new birth, our posters are rewarded with a newborn baby animal, allowing them to start their own personal livestock portfolio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Livestock Gallery -->
+    <section id="livestock" class="bg-gray-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-4xl font-
